@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\NahashonMuriithiKaro\\Desktop\\intacct\\backend\\backend.csproj": {}
+    "C:\\Users\\NahashonMuriithiKaro\\Desktop\\intacct\\api\\backend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\NahashonMuriithiKaro\\Desktop\\intacct\\backend\\backend.csproj": {
+    "C:\\Users\\NahashonMuriithiKaro\\Desktop\\intacct\\api\\backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NahashonMuriithiKaro\\Desktop\\intacct\\backend\\backend.csproj",
+        "projectUniqueName": "C:\\Users\\NahashonMuriithiKaro\\Desktop\\intacct\\api\\backend.csproj",
         "projectName": "backend",
-        "projectPath": "C:\\Users\\NahashonMuriithiKaro\\Desktop\\intacct\\backend\\backend.csproj",
+        "projectPath": "C:\\Users\\NahashonMuriithiKaro\\Desktop\\intacct\\api\\backend.csproj",
         "packagesPath": "C:\\Users\\NahashonMuriithiKaro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NahashonMuriithiKaro\\Desktop\\intacct\\backend\\obj\\",
+        "outputPath": "C:\\Users\\NahashonMuriithiKaro\\Desktop\\intacct\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\NahashonMuriithiKaro\\AppData\\Roaming\\NuGet\\NuGet.Config",

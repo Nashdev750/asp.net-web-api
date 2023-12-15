@@ -9,7 +9,7 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
+builder.Services.AddScoped<TimeSheetService, TimeSheetService>();
 builder.Services.AddControllers();
 builder.Services.AddDbContext<IntacctContext>(opt=>opt.UseSqlServer(builder.Configuration.GetConnectionString("constring")));
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -17,7 +17,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(
     option =>
 {
-    option.SwaggerDoc("v1", new OpenApiInfo { Title = "Test API", Version = "v1" });
+    option.SwaggerDoc("v1", new OpenApiInfo { Title = "Intacct API", Version = "v1" });
     option.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         In = ParameterLocation.Header,
@@ -88,6 +88,17 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+ app.Use(async (context, next) =>
+    {
+        context.Response.OnStarting(state =>
+        {
+            var httpContext = (HttpContext)state;
+            httpContext.Response.Headers["Server"] = "server";
+            return Task.CompletedTask;
+        }, context);
+
+        await next.Invoke();
+    });
 
 app.UseHttpsRedirection();
 

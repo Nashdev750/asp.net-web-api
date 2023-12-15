@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "t0j4MOl2gNNUyVR1+c8HJIS6Mv51wU0Z7w+NsSGDFoXAMJOE6qOhtZmezeD1sy42cxKG5Sp4RoSmj8r0GIGtCA==",
+  "dgSpecHash": "3Uve2B5L1xFDQVFfVTO6YfqzCpA0w4AQC+EoIe6EFDGV+9oV6j8wjrpoocvgm3nGr2PkOL3gxEb8iy/PadMWFg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\NahashonMuriithiKaro\\Desktop\\intacct\\backend\\backend.csproj",
+  "projectFilePath": "C:\\Users\\NahashonMuriithiKaro\\Desktop\\intacct\\api\\backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NahashonMuriithiKaro\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\NahashonMuriithiKaro\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
